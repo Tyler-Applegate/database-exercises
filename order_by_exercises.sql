@@ -84,3 +84,9 @@ ORDER BY Exercises
         We did this because the table is pretty small. IF this was a larger data set, we would use this code to find the answer 
         to the second question.
 
+        SELECT *
+        FROM employees
+        WHERE hire_date LIKE '199%'
+            AND birth_date LIKE '%12-25'
+            ORDER BY birth_date DESC, hire_date;
+
