@@ -42,7 +42,15 @@ use employees;
    SELECT *
    FROM employees
    WHERE last_name LIKE 'E%' OR last_name LIKE '%e';
-    - 30723
+    - 30723 Records
+
+   SELECT *
+   FROM employees
+   WHERE last_name 
+	   LIKE '%e'
+	   AND last_name 
+	   NOT LIKE 'E%'; 
+   - 23393 Records
 
 7. Find all current or previous employees employees whose last name starts and ends with 'E'. Enter a comment with the number of 
    employees whose last name starts and ends with E. How many employees last names end with E, regardless of whether they start with E?
@@ -50,6 +58,12 @@ use employees;
    FROM employees
    WHERE last_name LIKE 'E%' AND last_name LIKE '%e';
     - 899 Records
+
+   SELECT *
+   FROM employees
+   WHERE last_name 
+	   LIKE '%e'; 
+   - 24292 Records
 
 8. Find all current or previous employees hired in the 90s. Enter a comment with the number of employees returned.
    SELECT *
