@@ -2,6 +2,7 @@ LIMIT Exercises
 
 1. Create a new SQL script named limit_exercises.sql.
 
+    USE employees;
 
 2. MySQL provides a way to return only unique results from our queries with the keyword DISTINCT. For example, to find all the 
    unique titles within the company, we could run the following query:
@@ -61,6 +62,7 @@ LIMIT Exercises
                 - Ipke Fontan
 
     ## LIMIT will only give you the first 'x' number of results. 
-    ## OFFSET will skip the first 'x' number of results
-    ## LIMIT 5, OFFSET 45 will group the results in sets of 5, but skip the first 45 individual results (9 pages) and return 
+    ## OFFSET will skip the first 'y' number of results
+    ## LIMIT 'x', OFFSET 'y' will group the results in sets of 'x'', but skip the first 'y' individual results (9 pages) and return 
     the 46th-50th results (the 10th set of 5, on the 10th "page")
+    ## in this instance the page number can be represented by  [1 + (OFFSET / LIMIT)] where limit is a non-zero positive integer.
