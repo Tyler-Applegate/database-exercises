@@ -49,8 +49,7 @@ ORDER BY Exercises
 
         SELECT first_name, last_name, emp_no
         FROM employees
-        WHERE last_name LIKE 'E%'
-	        AND last_name LIKE '%e'
+        WHERE last_name LIKE 'E%e'
 	        ORDER BY emp_no;
                 - 899 Records
                 - 1st row Ramzi Erde 10021
@@ -62,8 +61,7 @@ ORDER BY Exercises
 
         SELECT *
         FROM employees
-        WHERE last_name LIKE 'E%'
-	        AND last_name LIKE '%e'
+        WHERE last_name LIKE 'E%e'
 	        ORDER BY hire_date DESC;
                 - 899 Records
                 - Newest Hire Teihi Eldridge
@@ -81,4 +79,8 @@ ORDER BY Exercises
                 - 362 Records
                 - Khun Bernini
                 - Douadi Pettis
+
+        ## This was done by scrolling to the bottom of the results to find the youngest employee who was hired first. 
+        We did this because the table is pretty small. IF this was a larger data set, we would use this code to find the answer 
+        to the second question.
 
