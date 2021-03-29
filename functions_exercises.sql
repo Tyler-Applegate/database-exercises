@@ -34,7 +34,8 @@ Functions_Exercises
 5.  Find the smallest and largest current salary from the salaries table.
 
     SELECT min(salary), max(salary)
-    FROM salaries;
+    FROM salaries
+    WHERE to_date LIKE '9999%';
 
     -Min 38623
     -Max 158220
