@@ -44,15 +44,17 @@ Functions_Exercises
     an underscore, the month the employee was born, and the last two digits of the year that they were born. Below is an example of 
     what the first 10 rows will look like:
 
-     SELECT CONCAT(
-    LOWER(SUBSTR(first_name, 1,1)),
-    LOWER(SUBSTR(last_name, 1,4)),
+     SELECT LOWER(
+    CONCAT(
+    SUBSTR(first_name, 1, 1),
+    SUBSTR(last_name, 1, 4),
     '_',
-    SUBSTR(birth_date, 6,2),
-    SUBSTR(birth_date, 3,2))
-    AS username
+    SUBSTR(birth_date, 6, 2),
+    SUBSTR(birth_date, 3, 2)))
+    AS username,
+    first_name, last_name, birth_date
     FROM employees
-    LIMIT 10;
+    LIMIT 10;  
 
     -gface_0953
     -bsimm_0664
