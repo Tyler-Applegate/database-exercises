@@ -53,8 +53,7 @@ Functions_Exercises
     SUBSTR(birth_date, 3, 2)))
     AS username,
     first_name, last_name, birth_date
-    FROM employees
-    LIMIT 10;  
+    FROM employees;  
 
     -gface_0953
     -bsimm_0664
