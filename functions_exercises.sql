@@ -33,7 +33,7 @@ Functions_Exercises
 
 5.  Find the smallest and largest current salary from the salaries table.
 
-     SELECT min(salary), max(salary)
+    SELECT min(salary), max(salary)
     FROM salaries;
 
     -Min 38623
@@ -44,7 +44,7 @@ Functions_Exercises
     an underscore, the month the employee was born, and the last two digits of the year that they were born. Below is an example of 
     what the first 10 rows will look like:
 
-     SELECT LOWER(
+    SELECT LOWER(
     CONCAT(
     SUBSTR(first_name, 1, 1),
     SUBSTR(last_name, 1, 4),
