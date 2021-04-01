@@ -27,12 +27,13 @@ Subqueries Exercises
 3.  How many people in the employees table are no longer working for the 
     company? Give the answer in a comment in your code.
 
-    SELECT*
+    SELECT COUNT(*) AS 'Count'
     FROM employees
     WHERE emp_no IN (
 	    SELECT emp_no
 	    FROM dept_emp
-	    WHERE to_date<curdate());	
+	    WHERE to_date<curdate());
+            -- 85108	
 
 4.  Find all the current department managers that are female. List their 
     names in a comment in your code.
@@ -63,6 +64,7 @@ Subqueries Exercises
 		    SELECT AVG(salary)
 		    FROM salaries)
 		);
+        -- 154543 Records
 
 6.  How many current salaries are within 1 standard deviation of the 
     current highest salary? (Hint: you can use a built in function to 
