@@ -91,10 +91,10 @@ Subqueries Exercises
     /
     (SELECT COUNT(salary)
     FROM salaries
-    WHERE to_date>curdate() 
+    WHERE to_date>curdate() * 100
     ) AS '%';	
 
-        -0.0003%
+        -0.03%
 
 BONUS
 
